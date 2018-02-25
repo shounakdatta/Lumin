@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>FormAI</title>
+
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- External  -->
+    <!-- <link rel="stylesheet" href="css/freelancer.min.css"> -->
+
+    <link rel="stylesheet" href="css/Body.css">
+    <link rel="stylesheet" href="css/lumin.css">
+
+  </head>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<body>
+
+  <section id="contact">
+      <div class="container">
+
+        <!-- Page Title -->
+
+        <div class="title" style="margin-bottom: 50px;">
+          <br>
+          <table>
+            <td>
+            <h1 style="color: black; font-family: unset;">YourMusicPlayer</h1>
+            </td>
+            <td>
+              <nav class="navbar" style="margin-left: 345px; font-size: 20px;">
+              <a style="color:black;"> <strong>|</strong> </a>
+              <a href="#" style=" color: black; margin-right: 25px; margin-left: 25px;">Homepage</a>
+              <a style="color:black;"> <strong>|</strong> </a>
+              <a href="#" style=" color: black; margin-right: 30px; margin-left: 30px;">Pricing</a>
+              <a style="color:black;"> <strong>|</strong> </a>
+              <a href="#" style=" color: black;  margin-left: 25px; margin-right: 25px;">About Us</a>
+              <a style="color:black;"> <strong>|</strong> </a>
+              </nav>
+            </td>
+          </table>
+        </div>
+        <table>
+          <tr>
+
+            <!-- Left Image -->
+            <td>
+              <img src="img/DCStudio80NC.png" width="550" style="margin-bottom: 65px;">
+            </td>
+
+            <!-- Title for sign up -->
+          <td>
+            <div class="col-md-6- mx-auto">
+              <h2 style="margin-left: 95px; color: antiquewhite;">Sign up today!</h2>
+              <h5 style="margin-left: 95px; color: antiquewhite;">Your Favourite Songs! 24/7! For Only <em>$9.99/month</em>!</h5>
+
+                <!-- First name Last Name -->
+                <form name="sentMessage" id="contactForm" novalidate="novalidate" style="margin-left: 95px;">
+                  <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                      <div class="header" style="position:relative;text-align;right">
+                        <input type="text" class="first-name" placeholder="First Name" size="18" required="required" data-validation-required-message="Please enter your first name.">
+                        <input type="text" class="last-name" placeholder="Last Name" size="19" required="required" data-validation-required-message="Please enter your name." style="margin-left: 8px;">
+                        <p class="help-block text-danger"></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                      <input class="email" type="email" placeholder="Email" size="41" required="required" data-validation-required-message="Please enter email address.">
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+
+                  <!-- Username -->
+                  <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                      <input class="username" type="username" placeholder="Username" size="41" required="required" data-validation-required-message="Please enter a valid username." style="margin-bottom: 15px;"maxlength="8">
+
+                      <!-- Dropdown Menu - User -->
+                      <div class="dropdown">
+                       <button class="dropbtn">?</button>
+                       <div class="dropdown-content">
+                         <a href="text">Can only be 8 characters</a>
+                         <a href="text">No spaces</a>
+                       </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Password -->
+                  <div class="control-group">
+                    <div class="form-group floating-label-form-group controls mb-0 pb-">
+                      <input type="password" class="password" placeholder="Password" size="41" required="required" data-validation-required-message="Please enter a password." maxlength="12" style="margin-bottom: 15px:">
+
+                      <!-- Dropdown Menu - Pass -->
+                      <div class="dropdown">
+                       <button class="dropbtn">?</button>
+                       <div class="dropdown-content">
+                         <a href="text">Can only be 8 - 12 characters</a>
+                         <a href="text">Must have an upper case</a>
+                         <a href="text">Must have a lower case</a>
+                         <a href="text">Must have a number</a>
+                         <a href="text">Must have a special character (@,$,%, e.t.c)</a>
+                       </div>
+                     </div>
+                    </div>
+
+                    <!-- Confirm Pass -->
+                    <div class="form-group floating-label-form-group controls mb-0 pb-">
+                      <input type="password" class="password" placeholder="Confirm Password" size="41" id=confirm_password required="required" data-validation-required-message="Passwords not alike" maxlength="12" style="margin-top: 20px;" style="margin-bottom: 10px;">
+                    </div>
+                  <br>
+
+                  <!-- Credit/Debit Card Info -->
+                  <div>
+                    <form>
+                      <label style="color: antiquewhite;">Credit/Debit Card #:</label>
+                      <input class="four-num-pin" type="text" placeholder=" - - - -" size="2" required="required" data-validation-required-message="It's not a scam! I swear!" maxlength="4">
+                      <input class="four-num-pin" type="text" placeholder=" - - - -" size="2" required="required" data-validation-required-message="It's not a scam! I swear!" maxlength="4">
+                      <input class="four-num-pin" type="text" placeholder=" - - - -" size="2" required="required" data-validation-required-message="It's not a scam! I swear!" maxlength="4">
+                      <input class="four-num-pin" type="text" placeholder=" - - - -" size="2" required="required" data-validation-required-message="It's not a scam! I swear!" maxlength="4">
+                      <label style="margin-left: 5px; color: antiquewhite;">  CCV: </label>
+                      <input class="three-num-pin" type="text" placeholder="  -  -  - " size="2" required="required" data-validation-required-message="It's still not a scam! I swear!" maxlength="3">
+                    </form>
+                  </div>
+                  <div>
+                  <br>
+
+                  <!-- Date -->
+                    <form>
+                      <label style="color: antiquewhite;">Choose when your subscription starts! :</label>
+                      <input class="date" type="date" name="sub" placeholder="Subscription Start Date">
+                    </form>
+                  </div>
+                  <br>
+                  <div id="success"></div>
+                </form>
+              </div>
+            </div>
+            </td>
+            </tr>
+          </table>
+
+          <!-- Sumbit -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-xl" onclick="submitForm()" style="margin-left: 950px; margin-bottom: 20px;">Submit</button>
+          </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div id="page-assistant">
+      <div class="row">
+        <div class="col-md-3">
+          <img id="assistant-image" src="img/Lumin.png">
+        </div>
+        <div class="col-md-9">
+          <div id="assistant-message">
+            <h5>Hi! I am Lumin, a web-based virtual assistant. Would you like help completing this form?</h5>
+            <div class="row">
+              <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-primary btn-xl" id="yesAssistant">Yes</button>
+              </div>
+              <div class="col-md-6 text-center">
+                <button type="button" class="btn btn-primary btn-xl" id="noAssistant">No</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- jQuery and Bootstrap .js Files -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Other scripts -->
+    <script src="FormAssistant.js"></script>
+    <script src="luminText.js"></script>
+
+  </body>
+</html>
