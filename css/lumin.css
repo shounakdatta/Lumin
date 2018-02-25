@@ -1,0 +1,47 @@
+/* This file handles styling of the virtual assistant*/
+#page-assistant {
+  width: 40%;
+  height: auto;
+  position: fixed;
+  z-index: 50;
+  right: 100%;
+  top: 75%;
+  animation:load_right 0.5s forwards;
+  -webkit-animation:load_right 0.5s forwards;
+}
+
+#assistant-image {
+  width: 100%;
+}
+
+#assistant-message {
+  height: auto;
+  width: auto;
+  background-color: #ffffcc;
+  outline-color: black;
+  border-radius: 20px;
+  padding: 30px;
+  opacity: 1;
+}
+
+@keyframes load_right{
+  0% {right:100%}
+  60% {right:55%;}
+  80% {right:56%}
+  100% {right:55%;}
+}
+@-webkit-keyframes load_right{
+  0% {right:100%}
+  60% {right:55%;}
+  80% {right:56%}
+  100% {right:55%;}
+}
+
+@keyframes load_left{
+  0% {right:55%}
+  100% {right:100%;}
+}
+@-webkit-keyframes load_left{
+  0% {right:55%}
+  100% {right:100%;}
+}
